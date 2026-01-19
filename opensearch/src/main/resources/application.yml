@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: opensearch
+
+opensearch:
+  host: localhost
+  port: 9200
+  username: admin
+  password: OpensearchIsGreat@1234567890

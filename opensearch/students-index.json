@@ -1,0 +1,23 @@
+{
+  "settings": {
+    "index": {
+      "knn": true
+    }
+  },
+  "mappings": {
+    "properties": {
+      "name": { "type": "text" },
+      "city": { "type": "keyword" },
+      "skills": { "type": "text" },
+      "embedding": {
+        "type": "knn_vector",
+        "dimension": 1024,
+        "method": {
+          "name": "hnsw",
+          "engine": "nmslib",
+          "space_type": "cosinesimil"
+        }
+      }
+    }
+  }
+}
